@@ -4,6 +4,12 @@
   width: 10em;
   margin: 1em; /* adds space to outside of content border */
   padding: 1em;
+  transition: 0.5s;
+}
+.Pokecard:hover {
+  background-color: lightskyblue;
+
+  cursor: pointer;
 }
 
 .Pokecard-header {
