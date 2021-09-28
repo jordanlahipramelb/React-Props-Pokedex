@@ -1,0 +1,18 @@
+.Pokedex {
+  text-align: center;
+}
+
+.Pokedex-header {
+  color: gray;
+}
+
+.Pokedex-cards {
+  display: flex; /* allows the container to display its contents side by side*/
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* flex items will wrap onto multiple lines, from top to bottom, responsive */
+}
+
+.Pokedex-winner {
+  font-weight: bold;
+  color: red;
+}

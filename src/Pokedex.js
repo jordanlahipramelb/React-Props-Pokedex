@@ -1,9 +1,15 @@
 import React from "react";
 
 import Pokecard from "./Pokecard";
-import "./Pokecard.css";
+import "./Pokedex.css";
 
-const Pokedex = ({ pokemon }) => {
+const Pokedex = (props) => {
+  const pokemon = props.pokemon;
+  let winnerMessage;
+  if (props.isWinner) {
+    winnerMessage = <p className="Pokedex-winner">THIS HAND WINS!</p>;
+  }
+
   return (
     <div className="Pokedex">
       <h1 className="Pokedex-header">Pokedex</h1>
@@ -18,6 +24,8 @@ const Pokedex = ({ pokemon }) => {
           />
         ))}
       </div>
+      <h3 className="Pokedex-total-exp">Total Experience: {props.exp}</h3>
+      {winnerMessage}
     </div>
   );
 };
